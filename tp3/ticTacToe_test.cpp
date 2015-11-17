@@ -32,6 +32,7 @@ struct Point
     int y;
 };
 typedef std::vector<Point> Move;
+typedef Move::size_type Index;
 
 class UnitTester
 {
@@ -91,7 +92,7 @@ public:
     // play a game given the move to be done
     void exec_play(Move& v)
     {
-        for(int i = 0; i < v.size(); ++i)
+        for(Index i = 0; i < v.size(); ++i)
         {
             if (i % 2 == 0)
                 _game.makeMoveX(v[i].x, v[i].y);
@@ -118,7 +119,7 @@ public:
 
         Move v = {MM, TL, BR, MR, TR, BL, ML, TM, BM};
 
-        for(int i = 0; i < v.size(); ++i)
+        for(Index i = 0; i < v.size(); ++i)
         {
             _game.affichTab();
 
