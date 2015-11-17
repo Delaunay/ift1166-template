@@ -8,6 +8,7 @@ IFT1166 Git template for students
 1) Créer un nouveau Workspace
     
     Cliquer sur l'option Hosted Workspace
+        private
     Clone from Git
         avec l'adresse https://github.com/Delaunay/ift1166-template.git
     Choose a template
